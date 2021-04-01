@@ -1,0 +1,51 @@
+from mblock import event
+
+@event.keypressed('1')
+def on_keypressed():
+    sprite.pencolor('#42d0ad')
+    sprite.pendown()
+    sprite.size = 66
+    sprite.right(90)
+    sprite.say('This')
+    sprite.glide(-38, -73, 2)
+    sprite.pencolor('#f3175f')
+    sprite.size = 33
+    sprite.right(90)
+    sprite.say('is')
+    sprite.glide(-38, 4, 2)
+    sprite.pencolor('#b567fb')
+    sprite.size = 66
+    sprite.right(90)
+    sprite.say('SUPER')
+    sprite.glide(-122, 4, 2)
+    sprite.pencolor('#4f60d7')
+    sprite.size = 100
+    sprite.say('COOL!')
+    sprite.right(90)
+    sprite.play('Space Ambience')
+    sprite.volume = sprite.volume + (-30)
+    sprite.glide(-122, -73, 2)
+    sprite.hide()
+    sprite.volume = 100
+    sprite.glide(171, -73, 4)
+    sprite.show()
+    sprite.glide(-8, 160, 4)
+    sprite.hide()
+    sprite.glide(-122, -73, 4)
+    sprite.show()
+    sprite.size = 50
+    sprite.size = 10
+    sprite.think('Thanks for watching',4)
+    sprite.size = 235
+    sprite.stop_sound()
+
+
+@event.keypressed('3')
+def on_keypressed1():
+    sprite.size = 100
+    sprite.say('Goodbye!', 2)
+    sprite.penup()
+    sprite.clear()
+    sprite.direction = 90
+    sprite.x = -122
+    sprite.y = -73
