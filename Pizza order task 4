@@ -1,0 +1,58 @@
+from mblock import event
+import time
+
+@event.keypressed('space')
+def on_keypressed():
+    # not implemented, yet
+    # not implemented, yet
+    # not supported yet
+    # not supported yet
+    # not implemented, yet
+    time.sleep(1)
+    # not implemented, yet
+    time.sleep(1)
+    # not implemented, yet
+    if sprite.answer < 50:
+        # not implemented, yet
+
+    else:
+        # not implemented, yet
+
+    time.sleep(1)
+    # not implemented, yet
+    time.sleep(3)
+    # not implemented, yet
+    time.sleep(1)
+    # not implemented, yet
+    time.sleep(3)
+    if sprite.answer == 1:
+        # not supported yet
+        v = sprite.get_variable('total order cost')
+        sprite.set_variable('total order cost', v + 9)
+
+    else:
+        # not supported yet
+        v = sprite.get_variable('total order cost')
+        sprite.set_variable('total order cost', v + 15)
+
+    sprite.say('Superb choice', 2)
+    # not implemented, yet
+    # not supported yet
+    # not supported yet
+    # not supported yet
+
+
+@event.keypressed('z')
+def on_keypressed1():
+    # not implemented, yet
+    # not implemented, yet
+    # not implemented, yet
+    time.sleep(3)
+    while not str('apple').find(str('a')) > -1:
+        pass
+
+    # not supported yet
+    sprite.set_variable('total order cost', 0)
+    # not supported yet
+    # not supported yet
+    # not supported yet
